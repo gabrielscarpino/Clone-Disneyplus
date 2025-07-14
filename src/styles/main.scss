@@ -13,55 +13,55 @@
     font-weight: 700;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 
-body{
+body {
     background-color: variaveis.$corDeFundo;
-    font-family: avenir,sans-serif;
+    font-family: avenir, sans-serif;
 }
 
-@mixin text($fontSize:16px) {
+@mixin text($fontSize: 16px) {
     font-size: $fontSize;
     line-height: $fontSize + 10px;
     color: variaveis.$corTextoPrincipal;
 }
 
-@mixin title($fontSize: 40px){
+@mixin title($fontSize: 40px) {
     @include text($fontSize);
     color: variaveis.$corTextoSecundario;
 }
 
-.text--big{
+.text--big {
     @include text(18px);
 }
 
-.text{
+.text {
     @include text;
 }
 
-.text--small{
+.text--small {
     @include text(12px);
 }
 
-.link-text{
+.link-text {
     @include text(18px);
     color: variaveis.$corTextoSecundario;
     text-decoration: underline
 }
 
-.title--big{
+.title--big {
     @include title(44px);
 }
 
-.title{
+.title {
     @include title;
 }
 
-.title--small{
+.title--small {
     @include title(28px);
 }
